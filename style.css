@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #e6e9f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background 3D Floating Shapes */
+.bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: #e6e9f0;
+    box-shadow: 15px 15px 30px rgba(166, 180, 200, 0.6), 
+               -15px -15px 30px rgba(255, 255, 255, 0.8);
+    z-index: -1; /* Forces them behind the login card */
+}
+
+/* Top Left Circle */
+.shape-1 {
+    width: 200px;
+    height: 200px;
+    top: 15%;
+    left: 20%;
+}
+
+/* Bottom Right Circle */
+.shape-2 {
+    width: 350px;
+    height: 350px;
+    bottom: 10%;
+    right: 15%;
+}
+
+/* The Main Card */
+.login-container {
+    width: 380px;
+    padding: 40px 30px;
+    background-color: #e6e9f0;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(166, 180, 200, 0.7), 
+               -10px -10px 20px rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 3D Floating Logo Circle */
+.logo-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e6e9f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 12px rgba(166, 180, 200, 0.7), 
+               -6px -6px 12px rgba(255, 255, 255, 0.8);
+    color: #6c5ce7; /* Violet accent color */
+    font-size: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* Input Wrappers (holds both icon and text) */
+.input-field {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background: #e6e9f0;
+    border-radius: 12px;
+    padding: 0 15px;
+    box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), 
+                inset -5px -5px 10px rgba(255, 255, 255, 0.8);
+}
+
+.input-field i {
+    color: #888;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+    font-size: 15px;
+}
+
+.input-field input::placeholder {
+    color: #aaa;
+}
+
+/* Utility Links */
+.options {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    margin-top: -5px;
+}
+
+.forgot-link {
+    font-size: 13px;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-link:hover {
+    color: #6c5ce7;
+}
+
+/* Enhanced Submit Button */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #e6e9f0;
+    border-radius: 12px;
+    color: #6c5ce7;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 6px 6px 12px rgba(166, 180, 200, 0.7), 
+               -6px -6px 12px rgba(255, 255, 255, 0.8);
+}
+
+.login-btn:hover {
+    color: #5b4bc4;
+}
+
+.login-btn:active {
+    /* Depresses into the screen when clicked */
+    box-shadow: inset 4px 4px 8px rgba(166, 180, 200, 0.7), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
